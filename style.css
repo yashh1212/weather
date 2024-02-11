@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #222;
+    font-family: 'Kanit', sans-serif;
+}
+.card{
+    /* width: 90%; */
+    max-width: 900px;
+    /* height: 40rem; */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    color: #ebfffc;    
+    border-radius: 20px;
+    margin: 100px auto ;
+    padding: 20px 35px;
+    text-align: center;
+    /* overflow: hidden; */
+}
+.search{
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.search input{
+    width: 100%;
+    border-radius:2rem;
+    border: none;
+    outline: 0;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    height:60px;
+    padding-left: 20px ;
+    color: #555;
+    background: #ebfffc;
+}
+.search button{
+    border: none;
+    background: #ebfffc;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.search button img{
+    width: 16px;
+}
+button{
+    margin-left: 12px;
+}
+.weather-icon{
+    width: 150px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #061142;
+}
+.weather h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.details{
+    display:flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 30px;
+    margin-top: 50px;
+}
+.col1{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    text-align: left;
+}
+.col1 img{
+    width: 2.6rem;
+    margin-right: 10px;
+}
+.col2{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    text-align: left;
+}
+.col3{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    text-align: left;
+}
+.col4{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    text-align: left;
+}
+.col5{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    text-align: left;
+}
+.col6{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    text-align: left;
+}
+.col2 img{
+    width: 2.6rem;
+    margin-right: 10px;
+}
+.col3 img{
+    width: 2.6rem;
+    margin-right: 10px;
+}
+.humidity, .wind,.temp-feel,.UV,.air-p,.visibility{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.sunrise img{
+    width:40px;
+    margin-right: 10px;
+}
+.sunset img{
+    display: inline-block;
+    width: 40px;
+    margin-right:10px ;
+}
+.sun{
+    width: 46%;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+ 
+    margin-top: 50px;
+}
+.sunrise{
+    display:flex;
+    align-items: center;
+    text-align: left;
+}
+.sunset{
+    display:flex;
+    align-items: center;
+    text-align: left;
+}
+.sunrise-time,.sunset-time{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.sunset-time{
+    margin-right: 50px;
+}
+.details2{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 30px;
+    margin-top: 50px;
+
+}
+.col5 img{
+    width: 2.6rem;
+    margin-right: 10px;
+}
+.col4 img{
+    width: 2.6rem;
+    margin-right: 10px;
+}
+.col6 img{
+    width: 2.6rem;
+    margin-right: 10px;
+}
+.text{
+    font-size: 20px;
+    color: #ffffff;
+}
+.hide{
+    visibility: hidden;
+}
+.weather-status{
+    text-align: left;
+    margin-left: 20px;
+    font-size: 20px;
+}
+@media only screen and (max-width:450px) {
+    .card{
+        width: 100vw;
+        /* height: 100vh; */
+        overflow: hidden;
+        padding: 10px;
+        padding-top:20px ;
+        margin:0 ;
+    }
+    .container{
+        /* background-color: #061142; */
+        /* height: 100vh; */
+        display: flex;
+        width: 100vw;
+        /* gap: 20px; */
+        padding: 0 10px;
+    }
+    .details,
+    .sun,
+    .details2 {
+        display:grid;
+        /* margin-bottom: 50px; */
+        box-sizing: border-box;
+        /* border-spacing: 10px; */
+    }
+
+    .col1{
+        width: 5rem;
+        margin-bottom: 50px;
+    }
+    .col2{
+        width: 5rem;
+        margin-bottom: 50px;
+
+    }
+    .col3{
+        width: 5rem;
+        margin-bottom: 50px;
+
+        }
+    .col4{
+        width: 5rem;
+        margin-bottom: 50px;
+
+        }
+    .col5{
+        width: 5rem;
+        margin-bottom: 50px;
+
+        }
+    .col6{
+        width: 5rem;
+        margin-bottom: 50px;
+
+        }
+    .sunrise-time,
+    .sunset-time {
+        margin-right: 0;
+    }
+    .weather-status{
+        margin-top: 15px;
+        margin-bottom:-19px ;
+    }
+    .sun{
+        display: flex;
+        justify-content: space-between;
+        gap: 30vw;
+        padding: 0 20px;
+    }
+    
+}

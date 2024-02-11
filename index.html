@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <div class="search">
+
+                <input type="text" placeholder="enter city name" spellcheck="false" class="input">
+                <button id="search"><img src="images\search.png"></button>
+                <button id="location"><img src="images\location.png" alt=""></button>
+            </div>
+            <div class="weather">
+                <img src="images/rain.png" class="weather-icon hide" id="weather-icon">
+                <h1 class="temp">22°</h1>
+
+                <h2 class="city">Undifined</h2>
+                <p class="weather-status">.</p>
+                <div class="container">
+
+                    <div class="details">
+                        <div class="col1 ">
+                            <img src="images/humidity.png">
+                            <div>
+                                <p class="humidity">00</p>
+                                <p class="text">humidity</p>
+                            </div>
+                        </div>
+
+                        <div class="col2 set1">
+                            <img src="images/wind.png">
+                            <div>
+                                <p class="wind">00</p>
+                                <p class="text">wind speed</p>
+                            </div>
+                        </div>
+                        <div class="col3 set2">
+                            <img src="images/weather.png">
+                            <div>
+                                <p class="temp-feel">00</p>
+                                <p class="text">Feels Like</p>
+                            </div><br>
+                        </div>
+                    </div>
+
+                    <div class="details2">
+                        <div class="col4 set2">
+                            <img src="images/humidity.png">
+                            <div>
+                                <p class="air-p">00</p>
+                                <p class="text">Air Pressure</p>
+                            </div>
+                        </div>
+
+                        <div class="col5 set3">
+                            <img src="images/wind.png">
+                            <div>
+                                <p class="visibility">00</p>
+                                <p class="text">visibility</p>
+                            </div>
+                        </div>
+                        <div class="col6 set3">
+                            <img src="images/weather.png">
+                            <div>
+                                <p class="UV">00</p>
+                                <p class="text">UV</p>
+                            </div><br>
+                        </div>
+
+                    </div>
+                </div>
+                    <div class="sun">
+                        <div class="sunrise set4">
+                            <img src="https://cdn-icons-png.flaticon.com/128/3920/3920688.png">
+                            <div>
+                                <p class="sunrise-time">00</p>
+                                <p class="text">Sunrise</p>
+                            </div>
+                        </div>
+                        <div class="sunset set4">
+                            <img src="images/sunset.png">
+                            <div>
+                                <p class="sunset-time">00</p>
+                                <p class="text">sunset</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
